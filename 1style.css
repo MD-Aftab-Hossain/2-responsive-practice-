@@ -110,12 +110,32 @@ nav,
   margin-left: 100px;
 }
 
-/* main > section it means main tager 1st child  */
+   /* main > section it means
+    main tager 1st child  */
 .features> section {
   background-color: greenyellow;
 }
+/* love style -------- */
+.love{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
 
-/* facts style  */
+}
+.love-t{
+  border-left: 3px solid orange;
+  padding-left: 10px;
+}
+.love-card{
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  width: 585px;
+  height: 170px;
+}
+
+/* facts style--------  */
 .card{
   border:2px solid orange;
   /* width: 200px; */
@@ -133,6 +153,17 @@ nav,
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
         /* gride j-item ar flex e j-content */
+}
+
+
+.love-pic button{
+ margin-left: -10px;
+ margin-top: -20px;
+       /* এভাবেও করা যায়
+       position: relative;
+       z-index: 5;
+       bottom: 20px;
+       right: 20px; */
 }
 /* sponsor style  */
 .spons{
@@ -154,7 +185,7 @@ nav,
     flex-direction: column;
   }
 
-  .img-div, .cards, .s-img {
+  .img-div, .cards, .s-img, .love {
     grid-template-columns: repeat(1, 1fr); /*repeat(1, 1fr) = repeat: 1fr*/
   }
   .feat-desc{
@@ -166,6 +197,13 @@ nav,
   .s-img{
     justify-items: center;
     gap: 50px;
+  }
+  .love-pic button{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .love-pic img{
+    width: 100%;
   }
 }
 
